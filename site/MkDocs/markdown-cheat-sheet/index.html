@@ -179,15 +179,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to DocOcean" class="md-nav__link">
+      Welcome to DocOcean
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-1">
+    <label class="md-nav__link" for="nav-2">
       GitHub
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
+      <label class="md-nav__title" for="nav-2">
         GitHub
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -199,8 +211,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../GitHub/cheatsheet/" title="Cheatsheet" class="md-nav__link">
-      Cheatsheet
+    <a href="../../GitHub/git_cheatsheet/" title="Git cheatsheet" class="md-nav__link">
+      Git cheatsheet
     </a>
   </li>
 
@@ -231,13 +243,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       MkDocs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         MkDocs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -692,89 +704,91 @@
 <h2 id="basic-syntax">Basic Syntax</h2>
 <p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.</p>
 <h3 id="heading">Heading</h3>
-<pre><code class="language-md"># H1
-## H2
-### H3
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="gh"># H1</span>
+<span class="gu">## H2</span>
+<span class="gu">### H3</span>
+</code></pre></div>
 <h3 id="bold">Bold</h3>
-<pre><code class="language-md">**bold text**
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="gs">**bold text**</span>
+</code></pre></div>
 <h3 id="italic">Italic</h3>
-<pre><code class="language-md">*italicized text*
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="ge">*italicized text*</span>
+</code></pre></div>
 <h3 id="blockquote">Blockquote</h3>
-<pre><code class="language-md">&gt; blockquote
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">blockquote</span>
+</code></pre></div>
 <h3 id="ordered-list">Ordered List</h3>
-<pre><code class="language-md">1. First item
-2. Second item
-3. Third item
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">1.</span> First item
+<span class="k">2.</span> Second item
+<span class="k">3.</span> Third item
+</code></pre></div>
 <h3 id="unordered-list">Unordered List</h3>
-<pre><code class="language-md">- First item
-- Second item
-- Third item
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">-</span> First item
+<span class="k">-</span> Second item
+<span class="k">-</span> Third item
+</code></pre></div>
 <h3 id="code">Code</h3>
-<pre><code class="language-md">`code`
-</code></pre>
+<div class="highlight"><pre><span></span><code>`code`
+</code></pre></div>
 <h3 id="horizontal-rule">Horizontal Rule</h3>
-<pre><code class="language-md">---
-</code></pre>
+<div class="highlight"><pre><span></span><code>---
+</code></pre></div>
 <h3 id="link">Link</h3>
-<pre><code class="language-md">[Markdown Guide](https://www.markdownguide.org)
-</code></pre>
+<div class="highlight"><pre><span></span><code>[<span class="nt">Markdown Guide</span>](<span class="na">https://www.markdownguide.org</span>)
+</code></pre></div>
 <h3 id="image">Image</h3>
-<pre><code class="language-md">![alt text](https://www.markdownguide.org/assets/images/tux.png)
-</code></pre>
+<div class="highlight"><pre><span></span><code>![<span class="nt">alt text</span>](<span class="na">https://www.markdownguide.org/assets/images/tux.png</span>)
+</code></pre></div>
 <h2 id="extended-syntax">Extended Syntax</h2>
 <p>These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.</p>
 <h3 id="table">Table</h3>
-<pre><code class="language-md">| Syntax | Description |
+<div class="highlight"><pre><span></span><code>| Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
-</code></pre>
+</code></pre></div>
 <h3 id="fenced-code-block">Fenced Code Block</h3>
-<pre><code class="language-md">{
+<div class="highlight"><pre><span></span><code>{
   &quot;firstName&quot;: &quot;John&quot;,
   &quot;lastName&quot;: &quot;Smith&quot;,
   &quot;age&quot;: 25
 }
-</code></pre>
+</code></pre></div>
 <h3 id="footnote">Footnote</h3>
-<pre><code class="language-md">Here's a sentence with a footnote. [^1]
+<div class="highlight"><pre><span></span><code>Here&#39;s a sentence with a footnote. [^1]
 
-[^1]: This is the footnote.
-</code></pre>
+[<span class="nl">^1</span>]: <span class="na">This is the footnote.</span>
+</code></pre></div>
 <h3 id="heading-id">Heading ID</h3>
-<pre><code class="language-md">### My Great Heading ```{#custom-id}```
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="gu">### My Great Heading ```{#custom-id}```</span>
+</code></pre></div>
 <h3 id="definition-list">Definition List</h3>
-<pre><code class="language-md">term
+<div class="highlight"><pre><span></span><code>term
 : definition
-</code></pre>
+</code></pre></div>
 <h3 id="strikethrough">Strikethrough</h3>
-<pre><code>~~The world is flat.~~
-</code></pre>
+<div class="highlight"><pre><span></span><code>~~The world is flat.~~
+or
+&lt;s&gt;The world is flat&lt;/s&gt;
+</code></pre></div>
 <h3 id="task-list">Task List</h3>
-<pre><code>- [x] Write the press release
+<div class="highlight"><pre><span></span><code>- [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-</code></pre>
+</code></pre></div>
 <h3 id="emoji">Emoji</h3>
 <p>That is so funny! <code>:joy:</code></p>
 <p>(See also <a href="https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji">Copying and Pasting Emoji</a>)</p>
 <h3 id="highlight">Highlight</h3>
 <p>I need to highlight these <code>==very important words==</code>.</p>
 <p>OR</p>
-<p>I need to highlight these <code>&lt;main&gt; very important words== &lt;mark&gt;</code>.</p>
+<p>I need to highlight these <code>&lt;mark&gt; very important words &lt;mark&gt;</code>.</p>
 <h3 id="subscript">Subscript</h3>
-<pre><code>H~2~O
-</code></pre>
+<div class="highlight"><pre><span></span><code>H~2~O
+</code></pre></div>
 <h3 id="superscript">Superscript</h3>
-<pre><code>X^2^
-</code></pre>
+<div class="highlight"><pre><span></span><code>X^2^
+</code></pre></div>
                 
                   
                 

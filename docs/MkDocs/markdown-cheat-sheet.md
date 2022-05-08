@@ -122,6 +122,8 @@ term
 
 ```
 ~~The world is flat.~~
+or
+<s>The world is flat</s>
 ```
 
 
@@ -145,7 +147,7 @@ I need to highlight these ``` ==very important words== ```.
 
 OR
 
-I need to highlight these ``` <main> very important words== <mark> ```.
+I need to highlight these ``` <mark> very important words <mark> ```.
 
 ### Subscript
 

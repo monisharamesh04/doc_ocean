@@ -13,7 +13,10 @@
   }
 }
 
+.all_emojis {
+  max-width: 3% !important;
+}
+
 .pushpin {
   animation: pushpin 1000ms infinite;
-  max-width: 3% !important;
 }
