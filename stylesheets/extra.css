@@ -1,0 +1,22 @@
+@keyframes pushpin {
+
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+
+  20%,
+  60% {
+    transform: scale(1.15);
+  }
+}
+
+.all_emojis {
+  max-width: 3% !important;
+}
+
+.pushpin {
+  animation: pushpin 1000ms infinite;
+}

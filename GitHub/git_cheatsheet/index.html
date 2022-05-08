@@ -1,0 +1,887 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://ocean-docs.com/GitHub/git_cheatsheet/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+    
+    
+      
+        <title>Git cheatsheet - DocOcean</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#vs-questions" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ocean-docs.com/" title="DocOcean" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                DocOcean
+              </span>
+              <span class="md-header-nav__topic">
+                Git cheatsheet
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://ocean-docs.com/" title="DocOcean" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    DocOcean
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to DocOcean" class="md-nav__link">
+      Welcome to DocOcean
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git cheatsheet
+      </label>
+    
+    <a href="./" title="Git cheatsheet" class="md-nav__link md-nav__link--active">
+      Git cheatsheet
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vs-questions" title="vs Questions" class="md-nav__link">
+    vs Questions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-questions" title="GENERAL QUESTIONS" class="md-nav__link">
+    GENERAL QUESTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#short-git-reference" title="SHORT GIT REFERENCE" class="md-nav__link">
+    SHORT GIT REFERENCE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-tips-and-shortcuts" title="GIT TIPS AND SHORTCUTS" class="md-nav__link">
+    GIT TIPS AND SHORTCUTS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-reset-vs-git-revert" title="Git reset vs Git revert" class="md-nav__link">
+    Git reset vs Git revert
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-rm-and-git-reset" title="Git rm and Git reset" class="md-nav__link">
+    Git rm and Git reset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-a-head-detached-from-message" title="Fix a head detached from message" class="md-nav__link">
+    Fix a head detached from message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relative-refs" title="Relative Refs" class="md-nav__link">
+    Relative Refs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-fetch-pull-push-remote" title="Git fetch, pull, push, remote" class="md-nav__link">
+    Git fetch, pull, push, remote
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end" title="END" class="md-nav__link">
+    END
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitignore/" title="Gitignore" class="md-nav__link">
+      Gitignore
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      MkDocs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        MkDocs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MkDocs/getting_started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MkDocs/markdown-cheat-sheet/" title="Markdown cheat sheet" class="md-nav__link">
+      Markdown cheat sheet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vs-questions" title="vs Questions" class="md-nav__link">
+    vs Questions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-questions" title="GENERAL QUESTIONS" class="md-nav__link">
+    GENERAL QUESTIONS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#short-git-reference" title="SHORT GIT REFERENCE" class="md-nav__link">
+    SHORT GIT REFERENCE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-tips-and-shortcuts" title="GIT TIPS AND SHORTCUTS" class="md-nav__link">
+    GIT TIPS AND SHORTCUTS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-reset-vs-git-revert" title="Git reset vs Git revert" class="md-nav__link">
+    Git reset vs Git revert
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-rm-and-git-reset" title="Git rm and Git reset" class="md-nav__link">
+    Git rm and Git reset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-a-head-detached-from-message" title="Fix a head detached from message" class="md-nav__link">
+    Fix a head detached from message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relative-refs" title="Relative Refs" class="md-nav__link">
+    Relative Refs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-fetch-pull-push-remote" title="Git fetch, pull, push, remote" class="md-nav__link">
+    Git fetch, pull, push, remote
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end" title="END" class="md-nav__link">
+    END
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Git cheatsheet</h1>
+                
+                <h2 id="vs-questions"><code>vs</code> Questions</h2>
+<hr />
+<ol>
+<li><a href="http://stackoverflow.com/questions/804115">http://stackoverflow.com/questions/804115</a>  (<code>rebase</code> vs <code>merge</code>).</li>
+<li><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">https://www.atlassian.com/git/tutorials/merging-vs-rebasing</a> (<code>rebase</code> vs <code>merge</code>)</li>
+<li><a href="https://www.atlassian.com/git/tutorials/undoing-changes/">https://www.atlassian.com/git/tutorials/undoing-changes/</a> (<code>reset</code> vs <code>checkout</code> vs <code>revert</code>)</li>
+<li><a href="http://stackoverflow.com/questions/2221658">http://stackoverflow.com/questions/2221658</a> (HEAD^ vs HEAD~) (See <code>git rev-parse</code>)</li>
+<li><a href="http://stackoverflow.com/questions/292357">http://stackoverflow.com/questions/292357</a> (<code>pull</code> vs <code>fetch</code>)</li>
+<li><a href="http://stackoverflow.com/questions/39651">http://stackoverflow.com/questions/39651</a> (<code>stash</code> vs <code>branch</code>)</li>
+<li><a href="http://stackoverflow.com/questions/8358035">http://stackoverflow.com/questions/8358035</a> (<code>reset</code> vs <code>checkout</code> vs <code>revert</code>)</li>
+<li><a href="http://stackoverflow.com/questions/5798930">http://stackoverflow.com/questions/5798930</a> (<code>git reset</code> vs <code>git rm --cached</code>)</li>
+</ol>
+<h2 id="general-questions">GENERAL QUESTIONS</h2>
+<hr />
+<ol>
+<li><a href="http://stackoverflow.com/questions/5788037">http://stackoverflow.com/questions/5788037</a> (Recover from <code>git reset --hard</code>).</li>
+<li><a href="http://stackoverflow.com/questions/1146973/">http://stackoverflow.com/questions/1146973/</a> (Revert all local changes to previous state)</li>
+<li><a href="http://effectif.com/git/recovering-lost-git-commits">http://effectif.com/git/recovering-lost-git-commits</a> (Recovering lost commit)</li>
+</ol>
+<h2 id="short-git-reference">SHORT GIT REFERENCE</h2>
+<hr />
+<ol>
+<li>All Git tips (<a href="https://github.com/git-tips/tips">https://github.com/git-tips/tips</a>). Must See.</li>
+<li>First download the cheatsheet from official site: <a href="http://git-scm.com">http://git-scm.com</a></li>
+<li>Now only these commands are important:<ul>
+<li>Configuring : <code>config, help</code>.</li>
+<li>Creating : <code>init, clone</code>.</li>
+<li>Make Changes: <code>status, diff, add, commit, reset, rm, mv (not important)</code>.</li>
+<li>Branching &amp; Merging: <code>branch, checkout, merge, stash</code></li>
+<li>Review History: <code>log, tag, diff, show</code></li>
+<li>Update and Publish: <code>fetch, pull, push, remote</code>.</li>
+<li>Very Imp: <code>reflog</code> . <a href="http://effectif.com/git/recovering-lost-git-commits">http://effectif.com/git/recovering-lost-git-commits</a></li>
+</ul>
+</li>
+<li>Commands that are not in cheatsheet (and advanced): <code>revert, apply, cherry-pick, rebase, clean, show-ref, update-ref, ls-files</code><ul>
+<li><code>git stash</code> is lightweight alternative to <code>git branch</code>.</li>
+</ul>
+</li>
+<li>For fast reference see: <a href="http://gitref.org/">http://gitref.org/</a></li>
+<li>Git Tips: <a href="http://gitready.com/">http://gitready.com/</a></li>
+<li>Git has three stages:<ul>
+<li>Committed : means data is safely stored in your local database.</li>
+<li>Modified :  means you've changed the file but not committed.</li>
+<li>Staged : means you've marked a modified file in its current version to go into your next commit snapshot.</li>
+</ul>
+</li>
+<li>Workflow of git:<ul>
+<li>Working Directory: holds the actual files</li>
+<li>Index: Acts as a staging area. That is, snapshot for next commit. Will be done by <code>git add</code> command.</li>
+<li>HEAD : Points to the last commit (and current branch) you've made.</li>
+</ul>
+</li>
+<li>Anything that is committed in Git can almost be recovered. However files which are not committed can't be recovered.</li>
+<li>Description of Update and Fetch Commands:<ul>
+<li><code>remote</code>: it only manage set of track repositories.</li>
+<li><code>fetch</code>: You can fetch new work from that remote server after cloning. Not similar to <code>clone</code>. You can later merge that repo with your existing with <code>merge</code> command.</li>
+<li><code>pull</code>: Automatically fetch and merge newest commit from remote server to local branch. By default, it combines fetch and merge.</li>
+<li><code>push</code>: This will push to the remote server from local branch.</li>
+</ul>
+</li>
+<li>When you do branch switching, files in your working directory will change to match that branch.</li>
+<li>Using <code>git reflog</code> you can get back your destroyed commit (done via <code>git reset --hard</code>) using either  <ul>
+<li><code>git checkout -b newBranchName &lt;shaViaReflog&gt;</code></li>
+<li><code>git reset --hard &lt;shaViaReflog&gt;</code>
+But use it in rare cases, because you reflog keep state via sha and it's hard to see which sha belongs to specific commit.</li>
+</ul>
+</li>
+<li><code>git cherry-pick</code> is a low level version of <code>rebase</code>.</li>
+</ol>
+<h3 id="git-tips-and-shortcuts">GIT TIPS AND SHORTCUTS</h3>
+<hr />
+<p>Most used commands are: <code>init, clone, status, log, add, commit, reset, rm, branch, checkout, merge, stash</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="c1">## -- Initializing a new git repository</span>
+        <span class="nv">$$</span> git init
+
+    <span class="c1">## -- Useful git log commands</span>
+        <span class="nv">$$</span> git log --oneline        <span class="c1">## print short sha in one line</span>
+        <span class="nv">$$</span> git log -3               <span class="c1">## show only first 3 commit</span>
+        <span class="nv">$$</span> git log --author<span class="o">=</span><span class="s2">&quot;John&quot;</span>  <span class="c1">## show commits only by this author</span>
+
+
+    <span class="c1">## -- Cloning a git repository</span>
+    <span class="c1">## The other protocols are: ssh, ftp, file://, http(s):// etc...</span>
+        <span class="nv">$$</span> git clone git://github.com/something/foo.git
+
+    <span class="c1">## -- Show the status of file</span>
+        <span class="nv">$$</span> git status -s  <span class="c1"># in short format</span>
+
+    <span class="c1">## -- Add the file to staging area.</span>
+        <span class="nv">$$</span> git add foo.js bar.js   <span class="c1">## `--` is used to seperate files from `add` options.</span>
+        <span class="nv">$$</span> git add .    <span class="c1"># add all the files</span>
+
+    <span class="c1">## -- Show what have changed since you last commit</span>
+        <span class="nv">$$</span> git diff  <span class="c1">## with a `--cached` option, show the changes that will go into the next commit snapshot.</span>
+
+    <span class="c1">## -- Commit the changes after you add the files to staging area</span>
+        <span class="nv">$$</span> git commit -m <span class="s1">&#39;with an inline message&#39;</span>
+
+    <span class="c1">## -- Auto-commit and track changes to modified file.</span>
+    <span class="c1">## NOTE: The files you&#39;ve not added doesn&#39;t track by commit with `-a` command.</span>
+        <span class="nv">$$</span> git commit -a -m <span class="s1">&#39;with an inline message&#39;</span>
+
+    <span class="c1">## -- Ammend last commit (i.e, merge to previous commit)</span>
+    <span class="c1">## https://nathanhoad.net/git-amend-your-last-commit</span>
+    <span class="c1">## After doing `git add .`</span>
+        <span class="nv">$$</span> git commit --amend   <span class="c1"># alternate is `git reset --soft HEAD~`.</span>
+        <span class="c1">## amend a commit without changing previous message</span>
+        <span class="nv">$$</span> git commit --amend --no-edit
+
+
+    <span class="c1">## -- Unstage file from the index only.  See `git reset` also.</span>
+    <span class="c1">## NOTE: `git rm` without `--cached` will simply remove the file from both index and working directory.</span>
+        <span class="nv">$$</span> git rm --cached  <span class="c1"># exact opposite of git add.</span>
+
+    <span class="c1">## -- Throw away local changes after commit (Use with caution)</span>
+        <span class="nv">$$</span> git checkout &lt;file&gt;  
+        <span class="c1"># if the branch name and file name are same, then do this</span>
+        <span class="nv">$$</span> git checkout -- &lt;file&gt;
+        <span class="c1">## for all changes (it&#39;s perfect for time travel on previous commit)</span>
+        <span class="nv">$$</span> git checkout -f <span class="c1"># or `git reset --hard` (but previous one is more safer because with that you&#39;re in detached state.)</span>
+
+
+    <span class="c1">## Delete a single entry from git reflog. (git reflog is useful as it keeps 2 months history).</span>
+        <span class="nv">$$</span> git reflog delete HEAD@<span class="o">{</span>N<span class="o">}</span>    <span class="c1">## `N`: 1,2 etc... or &lt;sha&gt;</span>
+
+    <span class="c1">## Undo the last commit, but keep the history and adds a new history</span>
+    <span class="c1">## http://stackoverflow.com/questions/27032850/ (for `git reset` vs `git revert` with image)</span>
+        <span class="nv">$$</span> git revert
+
+    <span class="c1">## -- check where HEAD is</span>
+        <span class="nv">$$</span> git show-ref
+
+    <span class="c1">## Remove the initial commit (git reset doesn&#39;t work here, it works only after second commit)</span>
+    <span class="c1">## http://stackoverflow.com/questions/6632191/how-to-revert-initial-git-commit</span>
+        <span class="nv">$$</span> git update-ref -d HEAD
+
+
+    <span class="c1">## Push a specific branch</span>
+        <span class="nv">$$</span> git push origin &lt;mylocalbranch&gt;
+
+    <span class="c1">## -- Detailed explaination of `git reset` (all three options). P.S. Use git checkout for time travel.</span>
+    <span class="c1">## http://stackoverflow.com/a/6866485/2092405</span>
+    <span class="c1">## NOTE: All the below three options remove log, so if you want to get back to previous state, you can pick</span>
+    <span class="c1">## &lt;sha&gt; from git reflog and do git reset on this.</span>
+    <span class="c1">## Suppose the structure is</span>
+         A-B-C
+             ↑ <span class="o">(</span>master<span class="o">)</span>
+    <span class="c1">## Then, nuke commit C and never see it again. Do this:</span>
+        <span class="nv">$$</span> git reset --hard HEAD~1
+        <span class="c1">## the result is:</span>
+             A-B
+               ↑ <span class="o">(</span>master<span class="o">)</span>
+       <span class="c1">## To undo this command, use;</span>
+           <span class="nv">$$</span> git reset --hard &lt;newShaOfReflog&gt;  <span class="c1">## or (git reset --hard HEAD@{1})</span>
+
+    <span class="c1">## Undo the last commit, but keep your changes in working directory.</span>
+    <span class="c1">## It will delete the index the from git log also and show you untracked and unstaged files:</span>
+        <span class="nv">$$</span> git reset HEAD~1  <span class="c1">## move the pointer one index back (or git reset --mixed HEAD~1)</span>
+        <span class="c1">## the result is:</span>
+        A-B-C
+          ↑ <span class="o">(</span>master<span class="o">)</span>
+        <span class="c1">## To undo this command, use;</span>
+            <span class="nv">$$</span> git reset &lt;newShaOfReflog&gt;  <span class="c1">## or (git reset HEAD@{1})</span>
+
+    <span class="c1">## Undo the last commit, but don&#39;t touch the index and working directory.</span>
+    <span class="c1">## When you do git status, you&#39;ll see that the same files are in the index as before.</span>
+    <span class="c1">## In fact, right after this command, you could do `git commit` and you&#39;d be redoing the same commit you just had.</span>
+        <span class="nv">$$</span> git reset --soft HEAD~1
+
+
+    <span class="c1">## Add a changed file to old commit (not last commit). I.E., fix up old commit</span>
+    http://stackoverflow.com/a/2719659/2092405
+
+    <span class="c1">## merge a specific commit from one branch to another branch.</span>
+        <span class="c1">## make sure you&#39;re in the branch where you want merge.</span>
+        <span class="nv">$$</span> git cherry-pick &lt;commit-id-of-feature-branch&gt;
+
+    <span class="c1">## Merge two specific commit together (using rebase)</span>
+    http://stackoverflow.com/questions/2563632/how-can-i-merge-two-commits-into-one
+
+    <span class="c1">## Modify a specific commit in git</span>
+    http://stackoverflow.com/questions/1186535/how-to-modify-a-specified-commit-in-git
+    <span class="c1">## if you&#39;re getting this error. Needs a single revision. See this: http://stackoverflow.com/questions/26174757/</span>
+    <span class="c1">## Option: 2</span>
+    $ git checkout &lt;shaToThatCommit&gt;
+    touch newfile.txt
+    git add .
+    git commit --amend --no-edit
+    git rebase --onto HEAD &lt;shaToThatCommit&gt; master  <span class="c1">## it will do automatic git checkout to master branch</span>
+
+
+    <span class="c1">## Branching and Merging</span>
+    <span class="c1">## ---------------------</span>
+    <span class="c1">## List out all the branches</span>
+    <span class="nv">$$</span> git branch
+    <span class="c1">## Create a new branch `testing` at your last commit</span>
+    <span class="nv">$$</span> git branch testing
+    <span class="c1">## Switch to branch</span>
+    <span class="nv">$$</span> git checkout testing
+    <span class="c1">## Shortcut to create a new branch and checkout</span>
+    <span class="nv">$$</span> git checkout -b newbranch
+    <span class="c1">## Delete a branch</span>
+    <span class="nv">$$</span> git branch -d testing
+    <span class="c1">## Merge the &lt;branch&gt; on the current working branch</span>
+    <span class="c1">## Merge tip: If you&#39;re doing merge say, from `wip` to `live` branch and you&#39;ve edit `live` branch files</span>
+    <span class="c1">## then it will not undo changed file which is what we want.</span>
+    <span class="c1">## Also, merge conflict occurs when same file changed in both branch, you merged. You can reverse the merge conflict</span>
+    <span class="c1">## with `--abort` option</span>
+    <span class="nv">$$</span> git merge testing    <span class="c1">## this will merge `testing` branch onto current (`master`) branch.</span>
+    <span class="c1">## checkout arbitrary commits instead of branch</span>
+    <span class="nv">$$</span> git checkout HEAD~2
+    <span class="c1">## Undo deleted branch</span>
+    <span class="nv">$$</span> git reflog    <span class="c1">## to see the hash code of branch before deletion.</span>
+    <span class="nv">$$</span> git checkout &lt;hashcodeFromReflog&gt;  <span class="c1">## to restore, and then create the same branch from there.</span>
+</code></pre></div>
+<h2 id="git-reset-vs-git-revert">Git reset vs Git revert</h2>
+<hr />
+<p><strong>NOTE</strong>: <code>git revert</code> is advanced command and it may accidently delete your files, if you haven't committed.
+<a href="http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset">http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset</a>
+Basically <code>git revert</code> undo changes with new commit history (i.e., introduce a new commit that reverse the specified one) while <code>git reset</code> (with <code>--hard</code>) <strong>BEWARE</strong>. Any changes to tracked files in the working tree and index are discarded.
+<code>git reset</code> (with <code>--soft</code>) option doesn't touch the index file nor working tree. In this case, index file is staged but not committed and right after this command you can use <code>git commit</code>.
+<code>git reset</code> (with <code>--mixed</code>) option reset the index but not the working tree. In this case, index file is not staged, so after this command you have to use <code>git add</code> and <code>git commit</code>.</p>
+<h2 id="git-rm-and-git-reset">Git rm and Git reset</h2>
+<hr />
+<p><code>git rm</code> remove the file from the index (with <code>--cached</code> option).
+<code>git reset</code> is specifically about updating the index, moving the HEAD.
+These two options are <code>equivalent only when we first add a file</code>. After that with <code>git reset</code> you can move the index while with <code>git rm --cached</code>, you completly destroy the index.</p>
+<h2 id="fix-a-head-detached-from-message">Fix a <code>head detached from</code> message</h2>
+<hr />
+<p><a href="http://stackoverflow.com/questions/10228760/fix-a-git-detached-head">http://stackoverflow.com/questions/10228760/fix-a-git-detached-head</a>
+Basically checkout the branch using <code>git checkout branchname</code></p>
+<h2 id="relative-refs">Relative Refs</h2>
+<hr />
+<p><a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog/refspecs">https://www.atlassian.com/git/tutorials/refs-and-the-reflog/refspecs</a>
+The <code>~</code> character lets you reach parent commits. For eg: The following display the grandparent of HEAD:
+<code>git show HEAD~2</code>. The <code>~</code> character will always follow the first parent of a merge commit.
+If you want to follow different parent, use <code>^</code> character
+For eg: If HEAD is the merge commit, then following returns the second parent of HEAD:
+<code>git show HEAD^2</code>
+Some examples:</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># Only list commits that are parent of the second parent of a merge commit</span>
+    <span class="nv">$$</span> git log HEAD^2
+    <span class="c1"># Remove the last 3 commits from the current branch</span>
+    <span class="nv">$$</span> git reset HEAD~3
+    <span class="c1"># Interactively rebase the last 3 commits on the current branch</span>
+    <span class="nv">$$</span> git rebase -i HEAD~3
+</code></pre></div>
+<h2 id="git-fetch-pull-push-remote">Git <code>fetch</code>, <code>pull</code>, <code>push</code>, <code>remote</code></h2>
+<hr />
+<p><strong>NOTE: You can't push to non-bare repository if the branches are same on both remote and local server</strong>
+By default updating the current branch with non-bare repo is denied. If you're the only user, you can set git config
+<code>git config --bool core.bare true</code> and then delete all files except <code>.git</code> in remote.
+<a href="http://stackoverflow.com/a/2933656/2092405">http://stackoverflow.com/a/2933656/2092405</a>
+Some common git urls:</p>
+<div class="highlight"><pre><span></span><code>    ssh://<span class="o">[</span>user@<span class="o">]</span>host.xz<span class="o">[</span>:port<span class="o">]</span>/path/to/repo.git/
+    git://host.xz<span class="o">[</span>:port<span class="o">]</span>/path/to/repo.git/
+    http<span class="o">[</span>s<span class="o">]</span>://host.xz<span class="o">[</span>:port<span class="o">]</span>/path/to/repo.git/
+    ftp<span class="o">[</span>s<span class="o">]</span>://host.xz<span class="o">[</span>:port<span class="o">]</span>/path/to/repo.git/
+    <span class="o">[</span>user@<span class="o">]</span>host.xz:path/to/repo.git/
+    /path/to/repo.git/
+    file:///path/to/repo.git/
+</code></pre></div>
+<p><code>git pull</code> is basically shorthand for <code>git fetch</code> followed by <code>git merge FETCH_HEAD</code>
+<code>git fetch</code>: Downlaod new data and branches from remote repository
+<code>git push</code>: Push your new branches to remote repository.
+<code>git remote</code>: Manage (list, add and delete) remote repository aliases.</p>
+<ol>
+<li>To push local repository to your server</li>
+</ol>
+<div class="highlight"><pre><span></span><code>    <span class="c1">## On your server (create a bare repository)</span>
+    <span class="nv">$$</span> git init --bare repo.git
+    <span class="c1">## On local</span>
+    <span class="nv">$$</span> git remote add origin ssh://server/var/www/frontend.git
+    <span class="nv">$$</span> git push origin master
+    <span class="c1">## After that, use:</span>
+    <span class="nv">$$</span> <span class="nb">cd</span> /var/www/<span class="p">;</span> git init<span class="p">;</span> git clone frontend.git
+
+    <span class="c1">## or alternative way without bare repository</span>
+    <span class="c1">## switch to different branch locally</span>
+    <span class="c1">## and then on your server</span>
+    <span class="nv">$$</span> git init
+    <span class="c1">## from local repository</span>
+    <span class="nv">$$</span> git push ssh://server/path/to/git otherBranch
+    <span class="c1">## then merge the otherBranch to master in remote repository</span>
+
+    <span class="c1">## Shortcut without switching repository</span>
+    <span class="nv">$$</span> git remote add origin ssh://server/path/to/git
+    <span class="nv">$$</span> git push origin master:someOtherBranch       <span class="c1">## this push from master to `someOtherBranch`.</span>
+</code></pre></div>
+<h4 id="end">END</h4>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Welcome to DocOcean" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Welcome to DocOcean
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gitignore/" title="Gitignore" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Gitignore
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.30f6b8b1.js"></script>
+      
+      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
