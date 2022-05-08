@@ -81,27 +81,27 @@
             "title": "References"
         },
         {
-            "location": "/MkDocs/",
+            "location": "/MkDocs/getting_started/",
             "text": "Commands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nUpgrade Mkdocs\n\n\n\n\npip3 install --upgrade mkdocs mkdocs-material\n\n\ncd mkdocsDir\n\n\nmkdocs build --clean\n\n\n\n\nReverting to an older version of Mkdocs\n\n\n\n\npip install mkdocs==0.16.1 mkdocs-material==1.2.0",
-            "title": "Home"
+            "title": "Getting started"
         },
         {
-            "location": "/MkDocs/#commands",
+            "location": "/MkDocs/getting_started/#commands",
             "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
             "title": "Commands"
         },
         {
-            "location": "/MkDocs/#project-layout",
+            "location": "/MkDocs/getting_started/#project-layout",
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Project layout"
         },
         {
-            "location": "/MkDocs/#upgrade-mkdocs",
+            "location": "/MkDocs/getting_started/#upgrade-mkdocs",
             "text": "pip3 install --upgrade mkdocs mkdocs-material  cd mkdocsDir  mkdocs build --clean",
             "title": "Upgrade Mkdocs"
         },
         {
-            "location": "/MkDocs/#reverting-to-an-older-version-of-mkdocs",
+            "location": "/MkDocs/getting_started/#reverting-to-an-older-version-of-mkdocs",
             "text": "pip install mkdocs==0.16.1 mkdocs-material==1.2.0",
             "title": "Reverting to an older version of Mkdocs"
         },
