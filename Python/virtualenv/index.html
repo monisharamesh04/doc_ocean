@@ -654,12 +654,11 @@
 <dl>
 <dd><code>$ python3 -m venv &lt;my_venv or /path/to/my_venv&gt; --system-site-packages</code></dd>
 <dd>The dependencies installed in a virtual environment are isolated from the corresponding packages installed in the actual system or in any other environment, but by using the <code>--system-site-packages</code> flag you can access them.</dd>
-<dd>
+</dl>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
+<p>This is not a recommended approach, use it only if there is no other way.</p>
 </div>
-  This is not a recommended approach, use it only if there is no other way.</dd>
-</dl>
 <h2 id="skip-pip-installation">Skip pip installation</h2>
 <dl>
 <dd><code>$ python3 -m venv &lt;my_venv or /path/to/my_venv&gt; --without-pip</code></dd>

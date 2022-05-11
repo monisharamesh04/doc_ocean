@@ -400,6 +400,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deploy-to-the-github-page" class="md-nav__link">
+    Deploy to the github page
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -531,6 +538,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deploy-to-the-github-page" class="md-nav__link">
+    Deploy to the github page
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -547,12 +561,12 @@
 
 <h1 id="_1"></h1>
 <h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
+<dl>
+<dd><code>$ mkdocs new [dir-name]</code> - Create a new project.</dd>
+<dd><code>$ mkdocs serve</code> - Start the live-reloading docs server.</dd>
+<dd><code>$ mkdocs build</code> - Build the documentation site.</dd>
+<dd><code>$ mkdocs help</code> - Print this help message.</dd>
+</dl>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
@@ -560,15 +574,19 @@ docs/
     ...       # Other markdown pages, images and other files.
 </code></pre>
 <h2 id="upgrade-mkdocs">Upgrade Mkdocs</h2>
-<ul>
-<li>pip3 install --upgrade mkdocs mkdocs-material</li>
-<li>cd mkdocsDir</li>
-<li>mkdocs build --clean</li>
-</ul>
+<dl>
+<dd><code>$ pip3 install --upgrade mkdocs mkdocs-material</code></dd>
+<dd><code>$ cd mkdocsDir</code></dd>
+<dd><code>$ mkdocs build --clean</code></dd>
+</dl>
 <h2 id="reverting-to-an-older-version-of-mkdocs">Reverting to an older version of Mkdocs</h2>
-<ul>
-<li>pip install mkdocs==0.16.1 mkdocs-material==1.2.0</li>
-</ul>
+<dl>
+<dd><code>$ pip install mkdocs==0.16.1 mkdocs-material==1.2.0</code></dd>
+</dl>
+<h2 id="deploy-to-the-github-page">Deploy to the github page</h2>
+<dl>
+<dd><code>$ mkdocs gh-deploy</code></dd>
+</dl>
 
               
             </article>
