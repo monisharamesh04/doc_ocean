@@ -49,8 +49,8 @@ Although I like the fully-object-oriented ways of Ruby, I have come to appreciat
 
 : The dependencies installed in a virtual environment are isolated from the corresponding packages installed in the actual system or in any other environment, but by using the `--system-site-packages` flag you can access them.
 
-: !!!caution
-  This is not a recommended approach, use it only if there is no other way.
+!!!caution
+    This is not a recommended approach, use it only if there is no other way.
 
 ## Skip pip installation
 

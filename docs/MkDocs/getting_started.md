@@ -2,10 +2,10 @@
 
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+: `$ mkdocs new [dir-name]` - Create a new project.
+: `$ mkdocs serve` - Start the live-reloading docs server.
+: `$ mkdocs build` - Build the documentation site.
+: `$ mkdocs help` - Print this help message.
 
 ## Project layout
 
@@ -16,10 +16,14 @@
 
 ## Upgrade Mkdocs
 
-* pip3 install --upgrade mkdocs mkdocs-material
-* cd mkdocsDir
-* mkdocs build --clean
+: `$ pip3 install --upgrade mkdocs mkdocs-material`
+: `$ cd mkdocsDir`
+: `$ mkdocs build --clean`
 
 ## Reverting to an older version of Mkdocs
 
-* pip install mkdocs==0.16.1 mkdocs-material==1.2.0
+: `$ pip install mkdocs==0.16.1 mkdocs-material==1.2.0`
+
+## Deploy to the github page
+
+: `$ mkdocs gh-deploy`
