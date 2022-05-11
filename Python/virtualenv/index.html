@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://ocean-docs.com/GitHub/gitignore/">
+        <link rel="canonical" href="https://ocean-docs.com/Python/virtualenv/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
     
     
       
-        <title>Gitignore - DocOcean</title>
+        <title>VirtualEnv commands - DocOcean</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adding-a-gitignore-into-an-exiting-repository" class="md-skip">
+        <a href="#virtualenv-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gitignore
+              VirtualEnv commands
             
           </span>
         </div>
@@ -199,14 +199,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -229,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git_cheatsheet/" class="md-nav__link">
+      <a href="../../GitHub/git_cheatsheet/" class="md-nav__link">
         Git cheatsheet
       </a>
     </li>
@@ -241,55 +239,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Gitignore
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../GitHub/gitignore/" class="md-nav__link">
         Gitignore
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#adding-a-gitignore-into-an-exiting-repository" class="md-nav__link">
-    Adding a .gitignore into an exiting repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -417,12 +371,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -443,11 +399,108 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Python/virtualenv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          VirtualEnv commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         VirtualEnv commands
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-virtual-environment" class="md-nav__link">
+    Creating a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activating-a-virtual-environment" class="md-nav__link">
+    Activating a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivate-a-virtual-environment" class="md-nav__link">
+    Deactivate a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removedelete-a-virtual-environment" class="md-nav__link">
+    Remove/Delete a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-out-an-existing-virtual-environment" class="md-nav__link">
+    Clear out an existing virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-python-version" class="md-nav__link">
+    Update Python version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#give-virtual-environment-access-to-system-site-packages" class="md-nav__link">
+    Give virtual environment access to system site-packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skip-pip-installation" class="md-nav__link">
+    Skip pip installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-with-venv-commands" class="md-nav__link">
+    Help with venv commands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -476,6 +529,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -484,15 +539,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-a-gitignore-into-an-exiting-repository" class="md-nav__link">
-    Adding a .gitignore into an exiting repository
+  <a href="#creating-a-virtual-environment" class="md-nav__link">
+    Creating a virtual environment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
+  <a href="#activating-a-virtual-environment" class="md-nav__link">
+    Activating a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivate-a-virtual-environment" class="md-nav__link">
+    Deactivate a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removedelete-a-virtual-environment" class="md-nav__link">
+    Remove/Delete a virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-out-an-existing-virtual-environment" class="md-nav__link">
+    Clear out an existing virtual environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-python-version" class="md-nav__link">
+    Update Python version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#give-virtual-environment-access-to-system-site-packages" class="md-nav__link">
+    Give virtual environment access to system site-packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skip-pip-installation" class="md-nav__link">
+    Skip pip installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-with-venv-commands" class="md-nav__link">
+    Help with venv commands
   </a>
   
 </li>
@@ -511,56 +615,61 @@
                 
 
 
-  <h1>Gitignore</h1>
-
-<h2 id="adding-a-gitignore-into-an-exiting-repository">Adding a .gitignore into an exiting repository</h2>
-<ol>
-<li>
-<p>Create a .gitignore file within your repo using the touch command:</p>
-<ul>
-<li><code>touch .gitignore</code></li>
-</ul>
-</li>
-<li>
-<p>Commit all your pending changes using</p>
-</li>
-<li>
-<p>Then run this command, which removes everything from index:</p>
-<ul>
-<li><code>git rm -r --cached .</code></li>
-</ul>
-</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <strong><em>git rm</em></strong> command deletes files both from the Git repository as well as the filesystem. Using the <strong><em>cached</em></strong> flag, the actual file on disk will not be deleted.</p>
-</div>
-<ol>
-<li>
-<p>Then just stage all the files again by running:</p>
-<ul>
-<li><code>git add .</code></li>
-</ul>
-</li>
-<li>
-<p>Next Commit the staged changes, using:</p>
-<ul>
-<li><code>git commit -m ".gitignore is now working"</code></li>
-</ul>
-</li>
-<li>
-<p>Finally push the commit to your repo:</p>
-<ul>
-<li><code>git push origin /&lt;master/branch_name/&gt;</code></li>
-</ul>
-</li>
-</ol>
+<h1 id="virtualenv-commands">VirtualEnv commands</h1>
+<p>Dipping my toes into the Python ocean was purely out of curiosity. When I was still a Ruby developer, everyone talked about Python. I just had to understand what the hype was all about. So on one gloomy need-for-motivation day, I decided to pick up Python as I challenged myself with Codewars Katas.</p>
+<p>The first thing that got on my nerves was the differences in the Python versions 2.7 and 3.*. Every time I tried to look up something and implement it into my solutions, the terminal would shriek at me. It was a struggle. Thanks to the millions of ways Python allows you to do one thing, my already-in-love-with-ruby brain almost hated it. I couldn't understand the appropriate and optimized way to solve a problem. But I wasn't ready to give up just yet. I had to know why everyone loved Python so much (maybe I just wanted to prove my love for ruby, meh!). It wasn't until much later I understood why Python had such a huge fan following.</p>
+<p>Although I like the fully-object-oriented ways of Ruby, I have come to appreciate Python's not-mainly-focused-on-web ways and its humungous community that help me find solutions to problems so easily. Now when I think of it, it also probably had to do with the number of problems setting up a virtual environment has solved for me! 😅</p>
+<h2 id="creating-a-virtual-environment">Creating a virtual environment</h2>
+<dl>
+<dd><code>python3.9 -m venv &lt;my_venv or /path/to/my_venv&gt;</code></dd>
+<dd>Creates a virtual environment called my_venv which is placed under the current directory.</dd>
+<dd>You can also pass the path to where you'd want to create your virtual environment instead of just its name.</dd>
+</dl>
+<h2 id="activating-a-virtual-environment">Activating a virtual environment</h2>
+<dl>
+<dd><code>$ source &lt;my_venv or /path/to/my_venv&gt;/bin/activate</code></dd>
+<dd>Once you run this you will notice each line in the terminal  begins with <code>&lt;my_venv&gt;</code>, which means your virtual environment is active.</dd>
+</dl>
+<h2 id="deactivate-a-virtual-environment">Deactivate a virtual environment</h2>
+<dl>
+<dd><code>$ deactivate</code></dd>
+<dd>After you run this you will notice the <code>&lt;ny_venv&gt;</code> on terminal disappears, meaning your virtual environment has been turnned off.</dd>
+</dl>
+<h2 id="removedelete-a-virtual-environment">Remove/Delete a virtual environment</h2>
+<dl>
+<dd><code>$ rm -rf &lt;my_venv or /path/to/my_venv&gt;</code></dd>
+<dd>Deleting it through the UI could taake a bit of time.</dd>
+</dl>
+<h2 id="clear-out-an-existing-virtual-environment">Clear out an existing virtual environment</h2>
+<dl>
+<dd><code>$ python3 -m venv --clear &lt;my_venv or /path/to/my_venv&gt;</code></dd>
+<dd>Sometimes, instead of completely deleting a virtual environment, you may instead want to clear all the packages that were previously installed.</dd>
+</dl>
+<h2 id="update-python-version">Update Python version</h2>
+<dl>
+<dd><code>$ python3 -m venv &lt;my_venv or /path/to/my_venv&gt; --upgrade</code></dd>
+<dd>Now if you want to instruct the environment to use the existing Python version, that it is assumed that it was upgraded in-place, then simply provide the --upgrade flag</dd>
+</dl>
+<h2 id="give-virtual-environment-access-to-system-site-packages">Give virtual environment access to system site-packages</h2>
+<dl>
+<dd><code>$ python3 -m venv &lt;my_venv or /path/to/my_venv&gt; --system-site-packages</code></dd>
+<dd>The dependencies installed in a virtual environment are isolated from the corresponding packages installed in the actual system or in any other environment, but by using the <code>--system-site-packages</code> flag you can access them.</dd>
+<dd>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>Please be careful, when you push this to a repository and pull from somewhere else into a state where those files are still tracked, the files will be DELETED.</p>
 </div>
-<h2 id="references">References</h2>
-<p><img alt="📌" class="twemoji pushpin all_emojis" src="https://twemoji.maxcdn.com/v/latest/72x72/1f4cc.png" title=":pushpin:" /> <a href="https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-file">Stackoverflow: Apply .gitignore on an existing repository already tracking large number of files</a></p>
+  This is not a recommended approach, use it only if there is no other way.</dd>
+</dl>
+<h2 id="skip-pip-installation">Skip pip installation</h2>
+<dl>
+<dd><code>$ python3 -m venv &lt;my_venv or /path/to/my_venv&gt; --without-pip</code></dd>
+<dd>You can skip the installation and/or upgrade of pip (which is the default package manager) then you can do so by passing the --without-pip flag.</dd>
+</dl>
+<h2 id="help-with-venv-commands">Help with venv commands</h2>
+<dl>
+<dd><code>$ python3 -m venv -h</code></dd>
+<dd>The <code>-h</code> flag usually has answers to most questions.</dd>
+</dl>
 
               
             </article>
@@ -574,7 +683,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../git_cheatsheet/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Git cheatsheet" rel="prev">
+        <a href="../../MkDocs/markdown-cheat-sheet/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Markdown Cheat Sheet" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -583,26 +692,11 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Git cheatsheet
+              Markdown Cheat Sheet
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../../Google%20Search%20Engine/" class="md-footer__link md-footer__link--next" aria-label="Next: Index" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Index
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
