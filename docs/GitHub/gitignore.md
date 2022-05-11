@@ -21,7 +21,7 @@
     * `git push origin /<master/branch_name/>`
 
 !!!caution
-    Please be careful, when you push this to a repository and pull from somewhere else into a state where those files are still tracked, the files will be DELETED
+    Please be careful, when you push this to a repository and pull from somewhere else into a state where those files are still tracked, the files will be DELETED.
 
 ## References
 

@@ -41,6 +41,16 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  # for formattinng
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # for lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # for images
   - md_in_html
   # for emoji
